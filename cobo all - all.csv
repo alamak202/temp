@@ -19,3 +19,70 @@ file16,Pacific Coast Bank,Harborview Heights,Benjamin Carter,03/01/2024,(555) 92
 file17,Horizon Trust,Evergreen Park,Emily Johnson,03/18/2024,(555) 224-3850,3625,EJOHNSON,WX22KL40,ECN103847,28394758690,WXY Inc,987 Oak St,Boston,MA,2101,Daniel Moore,11/11/1992,654 Hickory St,Austin,TX,78701,USA,555-66-7777,SSN,654321789,Lisa Taylor,12/12/1973,987 Walnut St,Jacksonville,FL,32201,USA,888-99-0000,SSN,987654123,Betty Clark,01/01/1984,321 Chestnut St,Fort Worth,TX,76101,USA,111-22-3333,SSN,321456789,Sandra White,02/02/1994,654 Ash St,Columbus,OH,43201,USA,444-55-6666,SSN,654987321,Ronald Miller,06/06/1977,987 Oak St,Boston,MA,2101,USA,888-99-0000,987654123
 file18,Coastal Community Bank,Bayside,Samuel Lee,03/21/2024,(555) 448-0292,7533,SLEE,UV97WX99,ECN889201,91028567292,XYZ Enterprises,321 Elm St,Seattle,WA,98101,Patricia Johnson,03/03/1975,987 Sycamore St,Charlotte,NC,28201,USA,777-88-9999,SSN,987321456,Debra Brown,04/04/1986,321 Poplar St,Indianapolis,IN,46201,USA,222-33-4444,SSN,321789456,Mark Davis,05/05/1996,654 Maple St,San Francisco,CA,94101,USA,555-66-7777,SSN,654321789,Ronald Miller,06/06/1977,987 Oak St,Boston,MA,2101,USA,888-99-0000,SSN,987654123,Angela Williams,07/07/1988,321 Elm St,Seattle,WA,98101,USA,111-22-3333,321456789
 file19,United American Bank,Uptown Square,Hannah Davis,03/05/2024,(555) 283-2949,5920,HDAVIS,MN09CD45,ECN112984,10039385729,LMN Holdings,654 Pine St,Denver,CO,80201,Angela Williams,07/07/1988,321 Elm St,Seattle,WA,98101,USA,111-22-3333,SSN,321456789,Brenda Thompson,08/08/1998,654 Pine St,Denver,CO,80201,USA,444-55-6666,SSN,654987321,Pamela Johnson,09/09/1979,987 Oak St,Chicago,IL,60601,USA,777-88-9999,SSN,456123789,Laura Wilson,10/10/1984,321 Maple St,Houston,TX,77001,USA,222-33-4444,SSN,321456987,Brenda Thompson,08/08/1998,654 Pine St,Denver,CO,80201,USA,444-55-6666,654987321
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Chatgpt,,,,Gemini,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,Key,Associated DLP Info Type,,Key,Associated DLP Info Type
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,bank_Bank Name,bank_Bank Name,ORGANIZATION_NAME,,bank_Bank Name,N/A (Consider custom info type)
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,bank_Branch Name,bank_Branch Name,ORGANIZATION_NAME,,bank_Branch Name,N/A (Consider custom info type)
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,bank_Banker Name,bank_Banker Name,PERSON_NAME,,bank_Banker Name,PERSON_NAME
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,bank_Date (MM/DD/YYYY),bank_Date (MM/DD/YYYY),DATE,,bank_Date (MM/DD/YYYY),DATE
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,bank_Banker Phone,bank_Banker Phone,PHONE_NUMBER,,bank_Banker Phone,PHONE_NUMBER
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,bank_Branch Number,bank_Branch Number,GENERIC_NUMBER (or no specific info type available),,bank_Branch Number,N/A (Consider custom info type)
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,bank_Banker AU,bank_Banker AU,GENERIC_ID,,bank_Banker AU,"N/A (Unclear meaning, consider custom info type)"
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,bank_Banker MAC,bank_Banker MAC,GENERIC_ID,,bank_Banker MAC,"N/A (Unclear meaning, consider custom info type)"
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,bank_Enterprise Customer Number (ECN),bank_Enterprise Customer Number (ECN),GENERIC_ID,,bank_Enterprise Customer Number (ECN),FINANCIAL_INFO
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,bank_Account Number,bank_Account Number,BANK_ACCOUNT_NUMBER,,bank_Account Number,FINANCIAL_INFO
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,legal_Full Legal Entity Name,legal_Full Legal Entity Name,ORGANIZATION_NAME,,legal_Full Legal Entity Name,ORGANIZATION_NAME
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,legal_Street Address,legal_Street Address,STREET_ADDRESS,,legal_Street Address,ADDRESS
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,legal_City,legal_City,CITY,,legal_City,LOCATION
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,legal_State,legal_State,US_STATE (or REGION),,legal_State,LOCATION
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,legal_ZIP/Postal Code,legal_ZIP/Postal Code,US_ZIP_CODE (or POSTAL_CODE),,legal_ZIP/Postal Code,POSTAL_CODE
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,owner1_Full Legal Name,owner1_Full Legal Name,PERSON_NAME,,owner1_Full Legal Name,PERSON_NAME
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,owner1_Date of Birth (MM/DD/YYYY),owner1_Date of Birth (MM/DD/YYYY),DATE_OF_BIRTH,,owner1_Date of Birth (MM/DD/YYYY),DATE
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,owner1_Street Address,owner1_Street Address,STREET_ADDRESS,,owner1_Street Address,ADDRESS
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,owner1_City,owner1_City,CITY,,owner1_City,LOCATION
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,owner1_State,owner1_State,US_STATE (or REGION),,owner1_State,LOCATION
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,owner1_ZIP/Postal Code,owner1_ZIP/Postal Code,US_ZIP_CODE (or POSTAL_CODE),,owner1_ZIP/Postal Code,POSTAL_CODE
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,owner1_Country,owner1_Country,COUNTRY_CODE,,owner1_Country,LOCATION
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,owner1_TIN Number,owner1_TIN Number,US_TIN,,owner1_TIN Number,TAX_ID
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,owner1_Primary ID Type,owner1_Primary ID Type,GENERIC_ID,,owner1_Primary ID Type,N/A (Consider custom info type)
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,owner1_Enterprise Customer Number (ECN) (For Bank Use Only),owner1_Enterprise Customer Number (ECN),GENERIC_ID,,owner1_Enterprise Customer Number (ECN) (For Bank Use Only),FINANCIAL_INFO
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,owner2_Full Legal Name,owner2_Full Legal Name,PERSON_NAME,,owner2_Full Legal Name,PERSON_NAME
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,owner2_Date of Birth (MM/DD/YYYY),owner2_Date of Birth (MM/DD/YYYY),DATE_OF_BIRTH,,owner2_Date of Birth (MM/DD/YYYY),DATE
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,owner2_Street Address,owner2_Street Address,STREET_ADDRESS,,owner2_Street Address,ADDRESS
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,owner2_City,owner2_City,CITY,,owner2_City,LOCATION
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,owner2_State,owner2_State,US_STATE (or REGION),,owner2_State,LOCATION
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,owner2_ZIP/Postal Code,owner2_ZIP/Postal Code,US_ZIP_CODE (or POSTAL_CODE),,owner2_ZIP/Postal Code,POSTAL_CODE
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,owner2_Country,owner2_Country,COUNTRY_CODE,,owner2_Country,LOCATION
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,owner2_TIN Number,owner2_TIN Number,US_TIN,,owner2_TIN Number,TAX_ID
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,owner2_Primary ID Type,owner2_Primary ID Type,GENERIC_ID,,owner2_Primary ID Type,N/A (Consider custom info type)
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,owner2_Enterprise Customer Number (ECN) (For Bank Use Only),owner2_Enterprise Customer Number (ECN),GENERIC_ID,,owner2_Enterprise Customer Number (ECN) (For Bank Use Only),FINANCIAL_INFO
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,owner3_Full Legal Name,owner3_Full Legal Name,PERSON_NAME,,owner3_Full Legal Name,PERSON_NAME
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,owner3_Date of Birth (MM/DD/YYYY),owner3_Date of Birth (MM/DD/YYYY),DATE_OF_BIRTH,,owner3_Date of Birth (MM/DD/YYYY),DATE
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,owner3_Street Address,owner3_Street Address,STREET_ADDRESS,,owner3_Street Address,ADDRESS
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,owner3_City,owner3_City,CITY,,owner3_City,LOCATION
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,owner3_State,owner3_State,US_STATE (or REGION),,owner3_State,LOCATION
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,owner3_ZIP/Postal Code,owner3_ZIP/Postal Code,US_ZIP_CODE (or POSTAL_CODE),,owner3_ZIP/Postal Code,POSTAL_CODE
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,owner3_Country,owner3_Country,COUNTRY_CODE,,owner3_Country,LOCATION
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,owner3_TIN Number,owner3_TIN Number,US_TIN,,owner3_TIN Number,TAX_ID
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,owner3_Primary ID Type,owner3_Primary ID Type,GENERIC_ID,,owner3_Primary ID Type,N/A (Consider custom info type)
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,owner3_Enterprise Customer Number (ECN) (For Bank Use Only),owner3_Enterprise Customer Number (ECN),GENERIC_ID,,owner3_Enterprise Customer Number (ECN) (For Bank Use Only),FINANCIAL_INFO
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,owner4_Full Legal Name,owner4_Full Legal Name,PERSON_NAME,,owner4_Full Legal Name,PERSON_NAME
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,owner4_Date of Birth (MM/DD/YYYY),owner4_Date of Birth (MM/DD/YYYY),DATE_OF_BIRTH,,owner4_Date of Birth (MM/DD/YYYY),DATE
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,owner4_Street Address,owner4_Street Address,STREET_ADDRESS,,owner4_Street Address,ADDRESS
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,owner4_City,owner4_City,CITY,,owner4_City,LOCATION
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,owner4_State,owner4_State,US_STATE (or REGION),,owner4_State,LOCATION
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,owner4_ZIP/Postal Code,owner4_ZIP/Postal Code,US_ZIP_CODE (or POSTAL_CODE),,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,owner4_Country,owner4_Country,COUNTRY_CODE,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,owner4_TIN Number,owner4_TIN Number,US_TIN,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,owner4_Primary ID Type,owner4_Primary ID Type,GENERIC_ID,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,owner4_Enterprise Customer Number (ECN) (For Bank Use Only),owner4_Enterprise Customer Number (ECN),GENERIC_ID,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,control_Full Legal Name of Individual with Control,control_Full Legal Name of Individual with Control,PERSON_NAME,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,control_Date of Birth (MM/DD/YYYY),control_Date of Birth (MM/DD/YYYY),DATE_OF_BIRTH,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,control_Street Address,control_Street Address,STREET_ADDRESS,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,control_City,control_City,CITY,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,control_State,control_State,US_STATE (or REGION),,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,control_ZIP/Postal Code,control_ZIP/Postal Code,US_ZIP_CODE (or POSTAL_CODE),,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,control_Country,control_Country,COUNTRY_CODE,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,control_TIN Number,control_TIN Number,US_TIN,,,
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,control_Enterprise Customer Number (ECN) (For Bank Use Only),control_Enterprise Customer Number (ECN),GENERIC_ID,,,
