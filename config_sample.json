@@ -1,0 +1,38 @@
+[
+  {
+    "page": 0,
+    "coords": [0.1, 0.1, 0.5, 0.2],
+    "normalized": true,
+    "mode": "mask",
+    "description": "Mask top-left area using normalized coords (10% from left, 10% from top, 50% width, 20% height)"
+  },
+  {
+    "page": 0,
+    "coords": [0.5, 0.5, 0.9, 0.7],
+    "normalized": true,
+    "mode": "substitute",
+    "text": "[REDACTED]",
+    "description": "Substitute text in center-right area using normalized coords"
+  },
+  {
+    "page": 1,
+    "coords": [72, 120, 300, 150],
+    "mode": "mask",
+    "description": "Mask using absolute coordinates (in points, 72 points = 1 inch)"
+  },
+  {
+    "page": 1,
+    "coords": [0.0, 0.9, 1.0, 1.0],
+    "normalized": true,
+    "mode": "substitute",
+    "text": "CONFIDENTIAL",
+    "description": "Footer redaction across full width using normalized coords"
+  },
+  {
+    "page": 2,
+    "coords": [0.2, 0.3, 0.8, 0.4],
+    "normalized": true,
+    "mode": "mask",
+    "description": "Center region mask using normalized coords"
+  }
+]
